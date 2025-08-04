@@ -6,8 +6,8 @@ import pickle
 try:
     with open("linear_regressor_model.pkl", "rb") as file:
         regressor = pickle.load(file)
-    with open("column_transformer.pkl", "rb") as f:
-        ct = pickle.load(f)
+    with open("column_transformer.pkl", "rb") as file:
+        ct = pickle.load(file)
 except FileNotFoundError:
     st.error("File Not Found")
     st.stop()
