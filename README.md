@@ -38,8 +38,8 @@ The focus was on learning:
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/your-username/student-performance-predictor.git
-cd student-performance-predictor
+git clone https://github.com//YashDahiwlikar914/Student-Performace-Predictor.git
+cd Student-Performace-Predictor
 ```
 
 ### 2. Install dependencies
