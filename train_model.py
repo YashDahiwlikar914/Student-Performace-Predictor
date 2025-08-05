@@ -10,6 +10,9 @@ Data = pd.read_csv("Student_Performance.csv")
 x = Data.iloc[:,:-1].values
 y = Data.iloc[:,-1].values
 
+Data.insert(3, "Sleep Deviation", 1 - (abs(Data["Sleep Hours"] - 7) / 7))
+Data.drop("Sleep Hours", axis=1, inplace=True)
+
 ct = ColumnTransformer(transformers=[('encoder', OneHotEncoder(), [2])], remainder="passthrough")
 x = np.array(ct.fit_transform(x))
 
