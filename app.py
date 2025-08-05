@@ -38,5 +38,7 @@ if st.button("Predict Score"):
     predicted_score = predicted_score[0] + 20
     if predicted_score >= 100:
         st.success(f"**Predicted Student Performance Score:** 100 out of 100")
+    elif predicted_score <= 10:
+        st.error(f"**You Are A Failure!**")
     else:
         st.success(f"**Predicted Student Performance Score:** {predicted_score:.2f} out of 100")
